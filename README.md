@@ -1,15 +1,12 @@
 # QuorumVote
 
 On-chain governance for any question. Post a proposal, set a deadline, and let the community vote with staked XLM. The side with more XLM weight wins. Every vote is a signed Soroban transaction.
-
 ## Live Links
 
 | | |
 |---|---|
 | **Frontend** | `https://quorumvote.vercel.app` |
-| **GitHub** | `https://github.com/YOUR_USERNAME/quorumvote` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CONTRACT_ID` |
-| **Proof TX** | `https://stellar.expert/explorer/testnet/tx/TX_HASH` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBFFLLBV3Q26MAN5BHPRGA43C7OAB3XD6HCZEOXBUZTW4ZJR4ANRFX25` |
 
 ## How It Works
 
