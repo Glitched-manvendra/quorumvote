@@ -1,12 +1,13 @@
 # QuorumVote
 
 On-chain governance for any question. Post a proposal, set a deadline, and let the community vote with staked XLM. The side with more XLM weight wins. Every vote is a signed Soroban transaction.
+
 ## Live Links
 
 | | |
 |---|---|
 | **Frontend** | `https://quorumvote.vercel.app` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBFFLLBV3Q26MAN5BHPRGA43C7OAB3XD6HCZEOXBUZTW4ZJR4ANRFX25` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CAM7M3NJ2UFOWMB3U3L3GTBRDQIZ2TA6IBVOR6KDIESKWV2S23I4YRFN` |
 
 ## How It Works
 
@@ -16,6 +17,16 @@ On-chain governance for any question. Post a proposal, set a deadline, and let t
 4. After deadline, anyone calls **finalise** to lock in the result
 5. Side with higher total XLM weight wins
 
+## Why This Project Matters
+
+This project turns a familiar real-world workflow into a verifiable on-chain primitive on Stellar: transparent state transitions, user-authenticated actions, and deterministic outcomes.
+
+## Architecture
+
+- **Smart Contract Layer**: Soroban contract enforces business rules, authorization, and state transitions.
+- **Client Layer**: React + Vite frontend handles wallet UX, transaction composition, and real-time status views.
+- **Wallet/Auth Layer**: Freighter signs every state-changing action so operations are attributable and non-repudiable.
+- **Infra Layer**: Stellar Testnet + Soroban RPC for execution; Vercel for frontend hosting.
 ## Contract Functions
 
 ```rust
@@ -44,3 +55,5 @@ count() -> u64
 chmod +x scripts/deploy.sh && ./scripts/deploy.sh
 cd frontend && npm install && npm run dev
 ```
+
+
